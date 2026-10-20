@@ -6,6 +6,7 @@ listen_port = 443
 listen_ipv6 = {{ 'true' if ctx.hconfig.ipv6_enabled else 'false' }}
 tcp_backlog = 4096
 tcp_max_connections = 8192
+tcp_protocol_detection_timeout_msec = 5000
 udp_max_connections = 2048
 tcp_send_proxy_protocol = "v2"
 
